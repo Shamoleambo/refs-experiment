@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import FormName from './components/FormName'
 import Modalzitto from './components/Modalzitto'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   const [name, setName] = useState('<insert name>')
