@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react'
 import FormName from './components/FormName'
+import Modalzitto from './components/Modalzitto'
 
 function App() {
   const [name, setName] = useState('<insert name>')
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Modalzitto />
       <h1>Hello {name}</h1>
       <FormName ref={nameInput} onClick={handleClick} />
     </>
