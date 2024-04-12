@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react'
+import PrettiestNav from './components/PrettiestNav'
 import FormName from './components/FormName'
 import Modalzitto from './components/Modalzitto'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+      <PrettiestNav />
       <Modalzitto ref={modal} name={name} />
       <h1>Hello {name}</h1>
       <FormName ref={nameInput} onClick={handleClick} />
