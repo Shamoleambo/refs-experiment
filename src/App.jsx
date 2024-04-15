@@ -1,4 +1,7 @@
 import { useState, useRef } from 'react'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import PrettiestNav from './components/PrettiestNav'
 import FormName from './components/FormName'
 import Modalzitto from './components/Modalzitto'
@@ -23,8 +26,18 @@ function App() {
         showModal={showModal}
         handleClose={() => setShowModal(false)}
       />
-      <h1>Hello {name}</h1>
-      <FormName ref={nameInput} onClick={handleClick} />
+      <Container className='mt-5'>
+        <Row>
+          <Col>
+            <h1>Hello {name}</h1>
+          </Col>
+        </Row>
+        <Row className='mt-5 justify-content-xl-center'>
+          <Col xl='5'>
+            <FormName ref={nameInput} onClick={handleClick} />
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }
